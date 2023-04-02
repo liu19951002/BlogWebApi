@@ -1,0 +1,15 @@
+D:\GitHub\BlogWebApi\MyBlog\AsnycAwaiteStudy\bin\Debug\net6.0\AsnycAwaiteStudy.exe
+D:\GitHub\BlogWebApi\MyBlog\AsnycAwaiteStudy\bin\Debug\net6.0\AsnycAwaiteStudy.deps.json
+D:\GitHub\BlogWebApi\MyBlog\AsnycAwaiteStudy\bin\Debug\net6.0\AsnycAwaiteStudy.runtimeconfig.json
+D:\GitHub\BlogWebApi\MyBlog\AsnycAwaiteStudy\bin\Debug\net6.0\AsnycAwaiteStudy.dll
+D:\GitHub\BlogWebApi\MyBlog\AsnycAwaiteStudy\bin\Debug\net6.0\AsnycAwaiteStudy.pdb
+D:\GitHub\BlogWebApi\MyBlog\AsnycAwaiteStudy\obj\Debug\net6.0\AsnycAwaiteStudy.csproj.AssemblyReference.cache
+D:\GitHub\BlogWebApi\MyBlog\AsnycAwaiteStudy\obj\Debug\net6.0\AsnycAwaiteStudy.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub\BlogWebApi\MyBlog\AsnycAwaiteStudy\obj\Debug\net6.0\AsnycAwaiteStudy.AssemblyInfoInputs.cache
+D:\GitHub\BlogWebApi\MyBlog\AsnycAwaiteStudy\obj\Debug\net6.0\AsnycAwaiteStudy.AssemblyInfo.cs
+D:\GitHub\BlogWebApi\MyBlog\AsnycAwaiteStudy\obj\Debug\net6.0\AsnycAwaiteStudy.csproj.CoreCompileInputs.cache
+D:\GitHub\BlogWebApi\MyBlog\AsnycAwaiteStudy\obj\Debug\net6.0\AsnycAwaiteStudy.dll
+D:\GitHub\BlogWebApi\MyBlog\AsnycAwaiteStudy\obj\Debug\net6.0\refint\AsnycAwaiteStudy.dll
+D:\GitHub\BlogWebApi\MyBlog\AsnycAwaiteStudy\obj\Debug\net6.0\AsnycAwaiteStudy.pdb
+D:\GitHub\BlogWebApi\MyBlog\AsnycAwaiteStudy\obj\Debug\net6.0\AsnycAwaiteStudy.genruntimeconfig.cache
+D:\GitHub\BlogWebApi\MyBlog\AsnycAwaiteStudy\obj\Debug\net6.0\ref\AsnycAwaiteStudy.dll

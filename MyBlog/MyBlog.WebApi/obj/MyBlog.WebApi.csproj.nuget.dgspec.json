@@ -4,21 +4,17 @@
     "D:\\GitHub\\BlogWebApi\\MyBlog\\MyBlog.WebApi\\MyBlog.WebApi.csproj": {}
   },
   "projects": {
-    "D:\\GitHub\\BlogWebApi\\MyBlog\\MyBlog.WebApi\\MyBlog.WebApi.csproj": {
+    "D:\\GitHub\\BlogWebApi\\MyBlog\\MyBlog.IReposity\\MyBlog.IReposity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitHub\\BlogWebApi\\MyBlog\\MyBlog.WebApi\\MyBlog.WebApi.csproj",
-        "projectName": "MyBlog.WebApi",
-        "projectPath": "D:\\GitHub\\BlogWebApi\\MyBlog\\MyBlog.WebApi\\MyBlog.WebApi.csproj",
-        "packagesPath": "C:\\Users\\liu\\.nuget\\packages\\",
-        "outputPath": "D:\\GitHub\\BlogWebApi\\MyBlog\\MyBlog.WebApi\\obj\\",
+        "projectUniqueName": "D:\\GitHub\\BlogWebApi\\MyBlog\\MyBlog.IReposity\\MyBlog.IReposity.csproj",
+        "projectName": "MyBlog.IReposity",
+        "projectPath": "D:\\GitHub\\BlogWebApi\\MyBlog\\MyBlog.IReposity\\MyBlog.IReposity.csproj",
+        "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
+        "outputPath": "D:\\GitHub\\BlogWebApi\\MyBlog\\MyBlog.IReposity\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\liu\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,12 +22,207 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://nuget.org/api/v2/": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\GitHub\\BlogWebApi\\MyBlog\\MyBlog.Model\\MyBlog.Model.csproj": {
+                "projectPath": "D:\\GitHub\\BlogWebApi\\MyBlog\\MyBlog.Model\\MyBlog.Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\GitHub\\BlogWebApi\\MyBlog\\MyBlog.Model\\MyBlog.Model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\GitHub\\BlogWebApi\\MyBlog\\MyBlog.Model\\MyBlog.Model.csproj",
+        "projectName": "MyBlog.Model",
+        "projectPath": "D:\\GitHub\\BlogWebApi\\MyBlog\\MyBlog.Model\\MyBlog.Model.csproj",
+        "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
+        "outputPath": "D:\\GitHub\\BlogWebApi\\MyBlog\\MyBlog.Model\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://nuget.org/api/v2/": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "SqlSugarCore": {
+              "target": "Package",
+              "version": "[5.1.4.63, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\GitHub\\BlogWebApi\\MyBlog\\MyBlog.Reposity\\MyBlog.Reposity.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\GitHub\\BlogWebApi\\MyBlog\\MyBlog.Reposity\\MyBlog.Reposity.csproj",
+        "projectName": "MyBlog.Reposity",
+        "projectPath": "D:\\GitHub\\BlogWebApi\\MyBlog\\MyBlog.Reposity\\MyBlog.Reposity.csproj",
+        "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
+        "outputPath": "D:\\GitHub\\BlogWebApi\\MyBlog\\MyBlog.Reposity\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://nuget.org/api/v2/": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\GitHub\\BlogWebApi\\MyBlog\\MyBlog.IReposity\\MyBlog.IReposity.csproj": {
+                "projectPath": "D:\\GitHub\\BlogWebApi\\MyBlog\\MyBlog.IReposity\\MyBlog.IReposity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "SqlSugar.IOC": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\GitHub\\BlogWebApi\\MyBlog\\MyBlog.WebApi\\MyBlog.WebApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\GitHub\\BlogWebApi\\MyBlog\\MyBlog.WebApi\\MyBlog.WebApi.csproj",
+        "projectName": "MyBlog.WebApi",
+        "projectPath": "D:\\GitHub\\BlogWebApi\\MyBlog\\MyBlog.WebApi\\MyBlog.WebApi.csproj",
+        "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
+        "outputPath": "D:\\GitHub\\BlogWebApi\\MyBlog\\MyBlog.WebApi\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://nuget.org/api/v2/": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\GitHub\\BlogWebApi\\MyBlog\\MyBlog.IReposity\\MyBlog.IReposity.csproj": {
+                "projectPath": "D:\\GitHub\\BlogWebApi\\MyBlog\\MyBlog.IReposity\\MyBlog.IReposity.csproj"
+              },
+              "D:\\GitHub\\BlogWebApi\\MyBlog\\MyBlog.Model\\MyBlog.Model.csproj": {
+                "projectPath": "D:\\GitHub\\BlogWebApi\\MyBlog\\MyBlog.Model\\MyBlog.Model.csproj"
+              },
+              "D:\\GitHub\\BlogWebApi\\MyBlog\\MyBlog.Reposity\\MyBlog.Reposity.csproj": {
+                "projectPath": "D:\\GitHub\\BlogWebApi\\MyBlog\\MyBlog.Reposity\\MyBlog.Reposity.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -68,7 +259,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
