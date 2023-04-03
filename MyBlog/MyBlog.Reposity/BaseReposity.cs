@@ -1,5 +1,7 @@
 ﻿using MyBlog.IReposity;
+using MyBlog.Model;
 using SqlSugar;
+using SqlSugar.IOC;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,41 +10,58 @@ using System.Threading.Tasks;
 
 namespace MyBlog.Reposity
 {
-    public class BaseReposity<T> : IBaseReposity<T> where T : class ,new()
+    public class BaseReposity<T> :SimpleClient<T>, IBaseReposity<T> where T : class ,new()
     {
-        public Task<bool> CreateAsync(T item)
+        public BaseReposity(ISqlSugarClient context=null):base(context)
         {
-            throw new NotImplementedException();
+            base.Context= DbScoped.Sugar;
+            //创建数据库
+            base.Context.DbMaintenance.CreateDatabase();
+            //创建表
+            base.Context.CodeFirst.InitTables(
+                typeof(BlogNews),
+                typeof(TypeInfo),
+                typeof(WriterInfo)
+                );
+        }
+        public async Task<bool> CreateAsync(T item)
+        {
+            return await base.InsertAsync(item);   
         }
 
-        public Task<bool> DeleteAsync(int id)
+        public async Task<bool> DeleteAsync(int id)
         {
-            throw new NotImplementedException();
+            return await base.DeleteByIdAsync(id);
         }
 
-        public Task<bool> EditorAsync(T item)
+        public async Task<bool> EditorAsync(T item)
         {
-            throw new NotImplementedException();
+            return await base.UpdateAsync(item);
         }
 
-        public Task<T> FindAsync(int id)
+        public virtual async Task<T> FindAsync(int id)
         {
-            throw new NotImplementedException();
+            return await base.GetByIdAsync(id);
         }
 
-        public Task<List<T>> QuerydAsync(System.Linq.Expressions.Expression<Func<T, bool>> func)
+        public virtual async Task<List<T>> QuerydAsync(System.Linq.Expressions.Expression<Func<T, bool>> func)
         {
-            throw new NotImplementedException();
+            return await base.GetListAsync(func);
         }
 
-        public Task<List<T>> QuerydAsync(int page, int size, RefAsync<int> total)
+        public virtual async Task<List<T>> QuerydAsync(int page, int size, RefAsync<int> total)
         {
-            throw new NotImplementedException();
+            return await base.Context.Queryable<T>().ToPageListAsync(page, size, total);
         }
 
-        public Task<List<T>> QuerydAsync(System.Linq.Expressions.Expression<Func<T, bool>> func, int page, int size, RefAsync<int> total)
+        public  virtual async Task<List<T>> QuerydAsync(System.Linq.Expressions.Expression<Func<T, bool>> func, int page, int size, RefAsync<int> total)
         {
-            throw new NotImplementedException();
+            return await base.Context.Queryable<T>().Where(func).ToPageListAsync(page, size, total);
+        }
+
+        public virtual async Task<List<T>> QuerydAsync()
+        {
+            return await base.GetListAsync();
         }
     }
 }

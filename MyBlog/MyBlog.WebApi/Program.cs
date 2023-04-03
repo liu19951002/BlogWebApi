@@ -16,6 +16,7 @@ namespace MyBlog.WebApi
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+            //SqlSugarIOC
             builder.Services.AddSqlSugar(new IocConfig()
             {
                 ConnectionString = builder.Configuration["SqlConnectString"],
