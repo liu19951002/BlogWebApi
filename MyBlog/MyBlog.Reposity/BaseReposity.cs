@@ -16,13 +16,13 @@ namespace MyBlog.Reposity
         {
             base.Context= DbScoped.Sugar;
             //创建数据库
-            base.Context.DbMaintenance.CreateDatabase();
-            //创建表
-            base.Context.CodeFirst.InitTables(
-                typeof(BlogNews),
-                typeof(TypeInfo),
-                typeof(WriterInfo)
-                );
+            //base.Context.DbMaintenance.CreateDatabase();
+            ////创建表
+            //base.Context.CodeFirst.InitTables(
+            //    typeof(BlogNews),
+            //    typeof(TypeInfo),
+            //    typeof(WriterInfo)
+            //    );
         }
         public async Task<bool> CreateAsync(T item)
         {

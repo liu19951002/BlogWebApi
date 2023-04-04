@@ -1168,6 +1168,20 @@
           "bin/placeholder/MyBlog.IReposity.dll": {}
         }
       },
+      "MyBlog.IService/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "MyBlog.IReposity": "1.0.0",
+          "MyBlog.Model": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MyBlog.IService.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyBlog.IService.dll": {}
+        }
+      },
       "MyBlog.Model/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -1193,6 +1207,19 @@
         },
         "runtime": {
           "bin/placeholder/MyBlog.Reposity.dll": {}
+        }
+      },
+      "MyBlog.Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "MyBlog.IService": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MyBlog.Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyBlog.Service.dll": {}
         }
       }
     }
@@ -3597,6 +3624,11 @@
       "path": "../MyBlog.IReposity/MyBlog.IReposity.csproj",
       "msbuildProject": "../MyBlog.IReposity/MyBlog.IReposity.csproj"
     },
+    "MyBlog.IService/1.0.0": {
+      "type": "project",
+      "path": "../MyBlog.IService/MyBlog.IService.csproj",
+      "msbuildProject": "../MyBlog.IService/MyBlog.IService.csproj"
+    },
     "MyBlog.Model/1.0.0": {
       "type": "project",
       "path": "../MyBlog.Model/MyBlog.Model.csproj",
@@ -3606,13 +3638,20 @@
       "type": "project",
       "path": "../MyBlog.Reposity/MyBlog.Reposity.csproj",
       "msbuildProject": "../MyBlog.Reposity/MyBlog.Reposity.csproj"
+    },
+    "MyBlog.Service/1.0.0": {
+      "type": "project",
+      "path": "../MyBlog.Service/MyBlog.Service.csproj",
+      "msbuildProject": "../MyBlog.Service/MyBlog.Service.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "MyBlog.IReposity >= 1.0.0",
+      "MyBlog.IService >= 1.0.0",
       "MyBlog.Model >= 1.0.0",
       "MyBlog.Reposity >= 1.0.0",
+      "MyBlog.Service >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
   },
@@ -3646,11 +3685,17 @@
             "D:\\GitHub\\BlogWebApi\\MyBlog\\MyBlog.IReposity\\MyBlog.IReposity.csproj": {
               "projectPath": "D:\\GitHub\\BlogWebApi\\MyBlog\\MyBlog.IReposity\\MyBlog.IReposity.csproj"
             },
+            "D:\\GitHub\\BlogWebApi\\MyBlog\\MyBlog.IService\\MyBlog.IService.csproj": {
+              "projectPath": "D:\\GitHub\\BlogWebApi\\MyBlog\\MyBlog.IService\\MyBlog.IService.csproj"
+            },
             "D:\\GitHub\\BlogWebApi\\MyBlog\\MyBlog.Model\\MyBlog.Model.csproj": {
               "projectPath": "D:\\GitHub\\BlogWebApi\\MyBlog\\MyBlog.Model\\MyBlog.Model.csproj"
             },
             "D:\\GitHub\\BlogWebApi\\MyBlog\\MyBlog.Reposity\\MyBlog.Reposity.csproj": {
               "projectPath": "D:\\GitHub\\BlogWebApi\\MyBlog\\MyBlog.Reposity\\MyBlog.Reposity.csproj"
+            },
+            "D:\\GitHub\\BlogWebApi\\MyBlog\\MyBlog.Service\\MyBlog.Service.csproj": {
+              "projectPath": "D:\\GitHub\\BlogWebApi\\MyBlog\\MyBlog.Service\\MyBlog.Service.csproj"
             }
           }
         }

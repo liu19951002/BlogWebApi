@@ -1,0 +1,17 @@
+D:\GitHub\BlogWebApi\MyBlog\MyBlog.Reposity\bin\Debug\net6.0\MyBlog.Reposity.deps.json
+D:\GitHub\BlogWebApi\MyBlog\MyBlog.Reposity\bin\Debug\net6.0\MyBlog.Reposity.dll
+D:\GitHub\BlogWebApi\MyBlog\MyBlog.Reposity\bin\Debug\net6.0\MyBlog.Reposity.pdb
+D:\GitHub\BlogWebApi\MyBlog\MyBlog.Reposity\bin\Debug\net6.0\MyBlog.IReposity.dll
+D:\GitHub\BlogWebApi\MyBlog\MyBlog.Reposity\bin\Debug\net6.0\MyBlog.Model.dll
+D:\GitHub\BlogWebApi\MyBlog\MyBlog.Reposity\bin\Debug\net6.0\MyBlog.IReposity.pdb
+D:\GitHub\BlogWebApi\MyBlog\MyBlog.Reposity\bin\Debug\net6.0\MyBlog.Model.pdb
+D:\GitHub\BlogWebApi\MyBlog\MyBlog.Reposity\obj\Debug\net6.0\MyBlog.Reposity.csproj.AssemblyReference.cache
+D:\GitHub\BlogWebApi\MyBlog\MyBlog.Reposity\obj\Debug\net6.0\MyBlog.Reposity.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub\BlogWebApi\MyBlog\MyBlog.Reposity\obj\Debug\net6.0\MyBlog.Reposity.AssemblyInfoInputs.cache
+D:\GitHub\BlogWebApi\MyBlog\MyBlog.Reposity\obj\Debug\net6.0\MyBlog.Reposity.AssemblyInfo.cs
+D:\GitHub\BlogWebApi\MyBlog\MyBlog.Reposity\obj\Debug\net6.0\MyBlog.Reposity.csproj.CoreCompileInputs.cache
+D:\GitHub\BlogWebApi\MyBlog\MyBlog.Reposity\obj\Debug\net6.0\MyBlog.Reposity.csproj.CopyComplete
+D:\GitHub\BlogWebApi\MyBlog\MyBlog.Reposity\obj\Debug\net6.0\MyBlog.Reposity.dll
+D:\GitHub\BlogWebApi\MyBlog\MyBlog.Reposity\obj\Debug\net6.0\refint\MyBlog.Reposity.dll
+D:\GitHub\BlogWebApi\MyBlog\MyBlog.Reposity\obj\Debug\net6.0\MyBlog.Reposity.pdb
+D:\GitHub\BlogWebApi\MyBlog\MyBlog.Reposity\obj\Debug\net6.0\ref\MyBlog.Reposity.dll

@@ -1,3 +1,7 @@
+using MyBlog.IReposity;
+using MyBlog.IService;
+using MyBlog.Reposity;
+using MyBlog.Service;
 using SqlSugar;
 using SqlSugar.IOC;
 using System.Runtime.CompilerServices;
@@ -23,8 +27,8 @@ namespace MyBlog.WebApi
                 DbType = IocDbType.SqlServer,
                 IsAutoCloseConnection = true
             });
-
-
+            //IOC注入
+            builder.Services.AddCustomIOC();
 
             var app = builder.Build();
             
@@ -41,6 +45,24 @@ namespace MyBlog.WebApi
             app.MapControllers();
 
             app.Run();
+        }
+
+        
+    }
+    /// <summary>
+    /// 依赖注入拓展类
+    /// </summary>
+    public static class IOCExtend
+    {
+        public static IServiceCollection AddCustomIOC(this IServiceCollection services)
+        {
+            services.AddScoped<IBlogNewsReposity, BlogNewsReposity>();
+            services.AddScoped<IBlogNewsService, BlogNewsService>();
+            services.AddScoped<ITypeInfoReposity, TypeInfoReposity>();
+            services.AddScoped<ITypeInfoService, TypeInfoService>();
+            services.AddScoped<IWriterInfoReposity, WriterInfoReposity>();
+            services.AddScoped<IWriterInfoService, WriterInfoService>();
+            return services;
         }
     }
 }

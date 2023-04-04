@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace MyBlog.Reposity
 {
-    public class BlogNewsReposity:BaseReposity<BlogNews>,INewsReposity
+    public class BlogNewsReposity:BaseReposity<BlogNews>,IBlogNewsReposity
     {
     }
 }
