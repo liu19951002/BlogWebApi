@@ -5,21 +5,23 @@ VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyBlog.WebApi", "MyBlog.WebApi\MyBlog.WebApi.csproj", "{E4001C60-B63E-4798-9218-31C1CCC9216C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyBlog.Model", "MyBlog.Model\MyBlog.Model.csproj", "{A77BA493-0270-4FC8-90D4-F4B88A11A3CD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyBlog.Model", "MyBlog.Model\MyBlog.Model.csproj", "{A77BA493-0270-4FC8-90D4-F4B88A11A3CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyBlog.IReposity", "MyBlog.IReposity\MyBlog.IReposity.csproj", "{1E79A945-D24B-404D-91F0-5FCCCFDB78C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyBlog.IReposity", "MyBlog.IReposity\MyBlog.IReposity.csproj", "{1E79A945-D24B-404D-91F0-5FCCCFDB78C6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Reposity", "Reposity", "{BDBB0AEF-542D-49F4-A94A-7A40EF933E8B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyBlog.Reposity", "MyBlog.Reposity\MyBlog.Reposity.csproj", "{2F11CD17-6BCB-43AA-8D25-6A6F309E0B6C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyBlog.Reposity", "MyBlog.Reposity\MyBlog.Reposity.csproj", "{2F11CD17-6BCB-43AA-8D25-6A6F309E0B6C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{3C8378DE-0569-45E3-A263-99B68633B2D3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsnycAwaiteStudy", "AsnycAwaiteStudy\AsnycAwaiteStudy.csproj", "{27986A2C-C630-4FDF-969E-E594ED463562}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsnycAwaiteStudy", "AsnycAwaiteStudy\AsnycAwaiteStudy.csproj", "{27986A2C-C630-4FDF-969E-E594ED463562}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyBlog.IService", "MyBlog.IService\MyBlog.IService.csproj", "{69C3B3CD-F07B-4163-B42A-2699EC74E438}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyBlog.IService", "MyBlog.IService\MyBlog.IService.csproj", "{69C3B3CD-F07B-4163-B42A-2699EC74E438}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyBlog.Service", "MyBlog.Service\MyBlog.Service.csproj", "{07342EC6-6F12-4C3B-A1A5-6365718980FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyBlog.Service", "MyBlog.Service\MyBlog.Service.csproj", "{07342EC6-6F12-4C3B-A1A5-6365718980FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyBlog.JWT", "MyBlog.JWT\MyBlog.JWT.csproj", "{018D736B-0D4B-40BD-B754-3157C05502E1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,6 +57,10 @@ Global
 		{07342EC6-6F12-4C3B-A1A5-6365718980FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{07342EC6-6F12-4C3B-A1A5-6365718980FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{07342EC6-6F12-4C3B-A1A5-6365718980FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{018D736B-0D4B-40BD-B754-3157C05502E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{018D736B-0D4B-40BD-B754-3157C05502E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{018D736B-0D4B-40BD-B754-3157C05502E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{018D736B-0D4B-40BD-B754-3157C05502E1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

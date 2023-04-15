@@ -35,6 +35,11 @@ namespace MyBlog.Service
             return await _IBaseReposity.FindAsync(id);  
         }
 
+        public async Task<T> FindAsync(Expression<Func<T, bool>> func)
+        {
+            return await _IBaseReposity.FindAsync(func);
+        }
+
         public async Task<List<T>> QuerydAsync()
         {
             return await _IBaseReposity.QuerydAsync();   

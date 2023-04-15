@@ -14,6 +14,7 @@ namespace MyBlog.IService
         Task<bool> DeleteAsync(int id);
         Task<bool> EditorAsync(T item);
         Task<T> FindAsync(int id);
+        Task<T> FindAsync(Expression<Func<T, bool>> func);
         Task<List<T>> QuerydAsync();
         /// <summary>
         /// 自定义条件查询

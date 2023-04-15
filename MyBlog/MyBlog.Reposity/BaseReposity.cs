@@ -5,6 +5,7 @@ using SqlSugar.IOC;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -42,6 +43,11 @@ namespace MyBlog.Reposity
         public virtual async Task<T> FindAsync(int id)
         {
             return await base.GetByIdAsync(id);
+        }
+
+        public virtual async Task<T> FindAsync(Expression<Func<T, bool>> func)
+        {
+            return await base.GetSingleAsync(func);
         }
 
         public virtual async Task<List<T>> QuerydAsync(System.Linq.Expressions.Expression<Func<T, bool>> func)
