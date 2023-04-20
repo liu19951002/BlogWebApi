@@ -99,3 +99,6 @@ D:\GitHub\BlogWebApi\MyBlog\MyBlog.WebApi\bin\Debug\net6.0\MyBlog.IService.pdb
 D:\GitHub\BlogWebApi\MyBlog\MyBlog.WebApi\bin\Debug\net6.0\MyBlog.Model.pdb
 D:\GitHub\BlogWebApi\MyBlog\MyBlog.WebApi\bin\Debug\net6.0\MyBlog.Reposity.pdb
 D:\GitHub\BlogWebApi\MyBlog\MyBlog.WebApi\bin\Debug\net6.0\MyBlog.Service.pdb
+D:\GitHub\BlogWebApi\MyBlog\MyBlog.WebApi\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\GitHub\BlogWebApi\MyBlog\MyBlog.WebApi\bin\Debug\net6.0\AutoMapper.dll
+D:\GitHub\BlogWebApi\MyBlog\MyBlog.WebApi\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

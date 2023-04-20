@@ -1,7 +1,10 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MyBlog.IService;
 using MyBlog.Model;
+using MyBlog.Model.DTO;
 using MyBlog.Service;
 using MyBlog.WebApi.Utiliy._MD5;
 using MyBlog.WebApi.Utiliy.ApiResult;
@@ -10,6 +13,7 @@ namespace MyBlog.WebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class WriterInfoController : ControllerBase
     {
         private readonly IWriterInfoService _writerInfoService;
@@ -47,8 +51,21 @@ namespace MyBlog.WebApi.Controllers
         public async Task<ActionResult<ApiResult>> Editor(string name)
         {
             int id = Convert.ToInt32(this.User.FindFirst("Id").Value);
+            var writer = await _writerInfoService.FindAsync(id);
+            writer.Name = name;
+            bool result =await _writerInfoService.EditorAsync(writer);
             //未写完的部分
+            if (result) { return ApiResultHelper.Success(writer); }
             return ApiResultHelper.Error("失败");
+        }
+        [AllowAnonymous]
+        [HttpGet("GetWriter")]
+        public async Task<ActionResult<ApiResult>> GetWriter([FromServices] IMapper imapper, int id)
+        {
+            var writer = await _writerInfoService.FindAsync(id);
+            var writerDTO = imapper.Map<WriterInfoDTO>(writer);
+            if (writerDTO == null) { return ApiResultHelper.Error("没有数据"); }
+            return ApiResultHelper.Success(writerDTO);
         }
     }
 }

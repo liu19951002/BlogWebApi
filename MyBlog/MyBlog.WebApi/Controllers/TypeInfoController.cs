@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MyBlog.IService;
 using MyBlog.Model;
@@ -8,6 +9,7 @@ namespace MyBlog.WebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class TypeInfoController : ControllerBase
     {
         private readonly ITypeInfoService _typeInfoService;

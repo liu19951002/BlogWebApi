@@ -1,13 +1,19 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MyBlog.IService;
 using MyBlog.Model;
+using MyBlog.Model.DTO;
 using MyBlog.WebApi.Utiliy.ApiResult;
+using SqlSugar;
+using System.Runtime.CompilerServices;
 
 namespace MyBlog.WebApi.Controllers
 {
     [Route("[controller]")]
     [ApiController]
+    //[Authorize]
     public class BlogNewsController : ControllerBase
     {
         private readonly IBlogNewsService _iBogNewsService;
@@ -18,6 +24,7 @@ namespace MyBlog.WebApi.Controllers
         [HttpGet("GetBlogNews")]
         public async Task<ActionResult<ApiResult>> GetBlogNews()
         {
+            int id = Convert.ToInt32(this.User.FindFirst("Id").Value);
             var data = await _iBogNewsService.QuerydAsync();
             if(data == null) { return ApiResultHelper.Error("读取失败"); }
             return ApiResultHelper.Success(data);
@@ -77,6 +84,16 @@ namespace MyBlog.WebApi.Controllers
                 return ApiResultHelper.Success(blogNews);
             }
             return ApiResultHelper.Error("修改失败");
+        }
+
+        [HttpGet("GetBlogNewsPage")]
+        public async Task<ActionResult<ApiResult>> GetBlogNewsByPage([FromServices] IMapper imapper,int page,int size)
+        {
+            RefAsync<int> total = 0;
+           
+            var data =await _iBogNewsService.QuerydAsync(page, size,total);
+            var listDTO = imapper.Map<List<BlogNewsDTO>>(data);
+            return ApiResultHelper.Success(listDTO);
         }
     }
 }
